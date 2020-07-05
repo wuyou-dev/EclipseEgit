@@ -1,21 +1,21 @@
 package henu.utils;
 import java.sql.*;
-
+//22222
 public class DbUtil {
 	/**
-	 * �����������ݿ����Ϣ�������ݿ�URL���û���������
+	 * 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟捷匡拷锟斤拷锟较拷锟斤拷锟斤拷锟斤拷菘锟経RL锟斤拷锟矫伙拷锟斤拷锟斤拷锟斤拷锟斤拷
 	 */
 	private static final String URL = "jdbc:mysql://localhost:3306/userdb?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=CONVERT_TO_NULL";
 	private static final String USER = "root";
 	private static final String PASSWORD = "654321";
 	/**
-	 * ����JDBC��ض���
+	 * 锟斤拷锟斤拷JDBC锟斤拷囟锟斤拷锟�
 	 */
 	protected static Statement s=null;
 	protected static ResultSet rs = null;
 	protected static Connection conn = null;
 	/**
-	 * �������ݿ�����
+	 * 锟斤拷锟斤拷锟斤拷锟捷匡拷锟斤拷锟斤拷
 	 * @return conn
 	 */
 	public static synchronized Connection getConnection()
@@ -29,9 +29,9 @@ public class DbUtil {
 		return conn;
 	}
 	/**
-	 * ִ��INSERT/UPDATE/DELETE SQL���
-	 * @param sql SQL��䣬�ַ�������
-	 * @return ִ�н����int����
+	 * 执锟斤拷INSERT/UPDATE/DELETE SQL锟斤拷锟�
+	 * @param sql SQL锟斤拷洌拷址锟斤拷锟斤拷锟斤拷锟�
+	 * @return 执锟叫斤拷锟斤拷锟絠nt锟斤拷锟斤拷
 	 */
 	public static int executeUpdate(String sql)
 	{
@@ -46,9 +46,9 @@ public class DbUtil {
 		return result;
 	}
 	/**
-	 * ִ��SELECT SQL���
-	 * @param sql SQL��䣬�ַ�������
-	 * @return ResultSet�����
+	 * 执锟斤拷SELECT SQL锟斤拷锟�
+	 * @param sql SQL锟斤拷洌拷址锟斤拷锟斤拷锟斤拷锟�
+	 * @return ResultSet锟斤拷锟斤拷锟�
 	 */
 	public static ResultSet executeQuery(String sql)
 	{
@@ -63,9 +63,9 @@ public class DbUtil {
 		return rs;
 	}
 	/**
-	 * ִ�ж�̬SQL���
-	 * @param sql ���в����Ķ�̬SQL��䡣 
-	 * @return ����PreparedStatement����
+	 * 执锟叫讹拷态SQL锟斤拷锟�
+	 * @param sql 锟斤拷锟叫诧拷锟斤拷锟侥讹拷态SQL锟斤拷洹� 
+	 * @return 锟斤拷锟斤拷PreparedStatement锟斤拷锟斤拷
 	 */
 	public static PreparedStatement executePreparedStatement(String sql)
 	{
@@ -80,7 +80,7 @@ public class DbUtil {
 		return ps;
 	}
 	/**
-	 * ����ع�
+	 * 锟斤拷锟斤拷毓锟�
 	 */
 	public static void rollback() {
 		try {
@@ -92,7 +92,7 @@ public class DbUtil {
 		
 	}
 	/**
-	 * �ر����ݿ����Ӷ���
+	 * 锟截憋拷锟斤拷锟捷匡拷锟斤拷锟接讹拷锟斤拷
 	 */
 	public static void close()
 	{
@@ -113,21 +113,21 @@ public class DbUtil {
 	public static void main(String[] args) {
 		/*
 		String sql = "INSERT INTO tb_users(fd_username,fd_password,fd_usertype,fd_gender,fd_birthdate,fd_email) VALUES ('Wangli','aWeY92,zeP', " +
-		"'����Ա','Ů','1999-10-22','allen@henu.edu.cn')";
+		"'锟斤拷锟斤拷员','女','1999-10-22','allen@henu.edu.cn')";
 		executeUpdate(sql);
 		close();
 		*/
-		//��дSQL���
+		//锟斤拷写SQL锟斤拷锟�
 		String sql = "INSERT INTO tb_users(fd_username,fd_password,fd_usertype,fd_gender,fd_email," +
 				"fd_birthdate, fd_introduction,fd_hobby) VALUES (?,?,?,?,?,?,?,?)";
 		
-		//ִ��SQL
+		//执锟斤拷SQL
 		PreparedStatement ps = DbUtil.executePreparedStatement(sql);
 		try {
 			ps.setString(1, "username");
 			ps.setString(2, "password");
 			ps.setString(3, "1");
-			ps.setString(4, "��");
+			ps.setString(4, "锟斤拷");
 			ps.setString(5, "email");
 			ps.setString(6, "birthdate");
 			ps.setString(7, "introduction");
