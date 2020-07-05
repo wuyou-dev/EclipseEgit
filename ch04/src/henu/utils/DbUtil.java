@@ -1,6 +1,6 @@
 package henu.utils;
 import java.sql.*;
-//22222
+//22222 Hello 
 public class DbUtil {
 	/**
 	 * 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟捷匡拷锟斤拷锟较拷锟斤拷锟斤拷锟斤拷菘锟経RL锟斤拷锟矫伙拷锟斤拷锟斤拷锟斤拷锟斤拷
