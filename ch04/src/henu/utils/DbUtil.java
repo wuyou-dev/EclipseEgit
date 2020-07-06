@@ -1,7 +1,7 @@
 package henu.utils;
 import java.sql.*;
 //22222 Hello 
-//bbb
+//bbb+aaa
 public class DbUtil {
 	/**
 	 * 閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓鎹峰尅鎷烽敓鏂ゆ嫹閿熻緝顫嫹閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷疯彉閿熺祵RL閿熸枻鎷烽敓鐭紮鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷�
