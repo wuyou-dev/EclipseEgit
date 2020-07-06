@@ -1,21 +1,22 @@
 package henu.utils;
 import java.sql.*;
 //22222 Hello 
+//bbb
 public class DbUtil {
 	/**
-	 * 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟捷匡拷锟斤拷锟较拷锟斤拷锟斤拷锟斤拷菘锟経RL锟斤拷锟矫伙拷锟斤拷锟斤拷锟斤拷锟斤拷
+	 * 閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓鎹峰尅鎷烽敓鏂ゆ嫹閿熻緝顫嫹閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷疯彉閿熺祵RL閿熸枻鎷烽敓鐭紮鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷�
 	 */
 	private static final String URL = "jdbc:mysql://localhost:3306/userdb?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=CONVERT_TO_NULL";
 	private static final String USER = "root";
 	private static final String PASSWORD = "654321";
 	/**
-	 * 锟斤拷锟斤拷JDBC锟斤拷囟锟斤拷锟�
+	 * 閿熸枻鎷烽敓鏂ゆ嫹JDBC閿熸枻鎷峰洘閿熸枻鎷烽敓锟�
 	 */
 	protected static Statement s=null;
 	protected static ResultSet rs = null;
 	protected static Connection conn = null;
 	/**
-	 * 锟斤拷锟斤拷锟斤拷锟捷匡拷锟斤拷锟斤拷
+	 * 閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓鎹峰尅鎷烽敓鏂ゆ嫹閿熸枻鎷�
 	 * @return conn
 	 */
 	public static synchronized Connection getConnection()
@@ -29,9 +30,9 @@ public class DbUtil {
 		return conn;
 	}
 	/**
-	 * 执锟斤拷INSERT/UPDATE/DELETE SQL锟斤拷锟�
-	 * @param sql SQL锟斤拷洌拷址锟斤拷锟斤拷锟斤拷锟�
-	 * @return 执锟叫斤拷锟斤拷锟絠nt锟斤拷锟斤拷
+	 * 鎵ч敓鏂ゆ嫹INSERT/UPDATE/DELETE SQL閿熸枻鎷烽敓锟�
+	 * @param sql SQL閿熸枻鎷锋磳顒婃嫹鍧�閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓锟�
+	 * @return 鎵ч敓鍙枻鎷烽敓鏂ゆ嫹閿熺禒nt閿熸枻鎷烽敓鏂ゆ嫹
 	 */
 	public static int executeUpdate(String sql)
 	{
@@ -46,9 +47,9 @@ public class DbUtil {
 		return result;
 	}
 	/**
-	 * 执锟斤拷SELECT SQL锟斤拷锟�
-	 * @param sql SQL锟斤拷洌拷址锟斤拷锟斤拷锟斤拷锟�
-	 * @return ResultSet锟斤拷锟斤拷锟�
+	 * 鎵ч敓鏂ゆ嫹SELECT SQL閿熸枻鎷烽敓锟�
+	 * @param sql SQL閿熸枻鎷锋磳顒婃嫹鍧�閿熸枻鎷烽敓鏂ゆ嫹閿熸枻鎷烽敓锟�
+	 * @return ResultSet閿熸枻鎷烽敓鏂ゆ嫹閿燂拷
 	 */
 	public static ResultSet executeQuery(String sql)
 	{
@@ -63,9 +64,9 @@ public class DbUtil {
 		return rs;
 	}
 	/**
-	 * 执锟叫讹拷态SQL锟斤拷锟�
-	 * @param sql 锟斤拷锟叫诧拷锟斤拷锟侥讹拷态SQL锟斤拷洹� 
-	 * @return 锟斤拷锟斤拷PreparedStatement锟斤拷锟斤拷
+	 * 鎵ч敓鍙鎷锋�丼QL閿熸枻鎷烽敓锟�
+	 * @param sql 閿熸枻鎷烽敓鍙鎷烽敓鏂ゆ嫹閿熶茎璁规嫹鎬丼QL閿熸枻鎷锋垂锟� 
+	 * @return 閿熸枻鎷烽敓鏂ゆ嫹PreparedStatement閿熸枻鎷烽敓鏂ゆ嫹
 	 */
 	public static PreparedStatement executePreparedStatement(String sql)
 	{
@@ -80,7 +81,7 @@ public class DbUtil {
 		return ps;
 	}
 	/**
-	 * 锟斤拷锟斤拷毓锟�
+	 * 閿熸枻鎷烽敓鏂ゆ嫹姣撻敓锟�
 	 */
 	public static void rollback() {
 		try {
@@ -92,7 +93,7 @@ public class DbUtil {
 		
 	}
 	/**
-	 * 锟截憋拷锟斤拷锟捷匡拷锟斤拷锟接讹拷锟斤拷
+	 * 閿熸埅鎲嬫嫹閿熸枻鎷烽敓鎹峰尅鎷烽敓鏂ゆ嫹閿熸帴璁规嫹閿熸枻鎷�
 	 */
 	public static void close()
 	{
@@ -113,21 +114,21 @@ public class DbUtil {
 	public static void main(String[] args) {
 		/*
 		String sql = "INSERT INTO tb_users(fd_username,fd_password,fd_usertype,fd_gender,fd_birthdate,fd_email) VALUES ('Wangli','aWeY92,zeP', " +
-		"'锟斤拷锟斤拷员','女','1999-10-22','allen@henu.edu.cn')";
+		"'閿熸枻鎷烽敓鏂ゆ嫹鍛�','濂�','1999-10-22','allen@henu.edu.cn')";
 		executeUpdate(sql);
 		close();
 		*/
-		//锟斤拷写SQL锟斤拷锟�
+		//閿熸枻鎷峰啓SQL閿熸枻鎷烽敓锟�
 		String sql = "INSERT INTO tb_users(fd_username,fd_password,fd_usertype,fd_gender,fd_email," +
 				"fd_birthdate, fd_introduction,fd_hobby) VALUES (?,?,?,?,?,?,?,?)";
 		
-		//执锟斤拷SQL
+		//鎵ч敓鏂ゆ嫹SQL
 		PreparedStatement ps = DbUtil.executePreparedStatement(sql);
 		try {
 			ps.setString(1, "username");
 			ps.setString(2, "password");
 			ps.setString(3, "1");
-			ps.setString(4, "锟斤拷");
+			ps.setString(4, "閿熸枻鎷�");
 			ps.setString(5, "email");
 			ps.setString(6, "birthdate");
 			ps.setString(7, "introduction");
